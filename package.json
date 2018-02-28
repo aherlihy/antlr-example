@@ -1,0 +1,17 @@
+{
+  "name": "antlrexample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "compile": "npm run antlr4",
+    "antlr4": "java -Xmx500M -cp '/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH' org.antlr.v4.Tool  -Dlanguage=JavaScript -o lib -visitor ECMAScript.g4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anna herlihy <anna@mongodb.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "antlr4": "^4.7.1"
+  }
+}
